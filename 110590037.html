@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tetris Game</title>
+  <meta charset="UTF-8">
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    background: #2F4F4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    border: 1px solid white;
+  }
+  .dd{
+    position:absolute;
+    bottom:110px;
+  }
+  .span1{
+  	position: absolute;
+    margin:0 auto;
+    top:100px;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Comic Sans MS;
+  }
+  </style>
+</head>
+<body>
+<canvas width="320" height="640" id="game"></canvas>
+<script src="mid.js"></script>
+<div class="dd">
+  <button onclick="start()" id="start_game"><img src="start.jpg" width="17"></button>
+  <button onclick="lm()" id="left"><img src="left.png" width="17"></button>
+  <button onclick="rm()" id="right"><img src="right.png" width="17"></button>
+  <button onclick="dm()" id="down"><img src="down.png" width="17"></button>
+  <button onclick="rt()" id="rotate"><img src="rotate.png" width="17"></button>
+  <Input type="Button" Value="RESET" style="background-color:pink;font-size:17px;" onClick="window.location.reload();">
+</div>
+<h2 id='score' class='span1'>Score：0</h2>
+</body>
+</html>
